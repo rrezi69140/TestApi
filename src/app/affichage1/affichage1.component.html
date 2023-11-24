@@ -1,0 +1,3 @@
+<ul id="requetesTerminees">
+  @for(utilisateur of  requetes.appels_termines | async; track utilisateur.name){<li>{{utilisateur.getMessage}}</li>}}
+</ul>

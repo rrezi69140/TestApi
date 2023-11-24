@@ -1,0 +1,5 @@
+@if (((requetes.appels_termines | async)!.length) > 0) {
+Au total {{(requetes.appels_termines | async)!.length}} appels API terminés.
+} @else {
+<p>Aucun appel API effectué</p>
+}
